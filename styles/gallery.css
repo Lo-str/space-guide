@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(#6A3BB4, #9400D4, #540569);
+    background-repeat: none;
+    background-attachment: fixed;
+    font-family: "Nunito", sans-serif;
+    margin: 0px 150px 100px 150px
+}
+.explorer {
+    color: #F9AD1A;
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #F9AD1A;
+}
+.image-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.black-hole-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+.andromeda-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+.sun-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+.moon-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+p {
+    display: flex;
+    text-align: left;
+    color: #540569;
+    width: 400px;
+}
+.image-box-1 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+}
+.image-box-1:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.image-box-2 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+}
+.image-box-2:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.image-box-3 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+}
+.image-box-3:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.image-box-4 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+}
+.image-box-4:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.heading {
+    display: flex;
+}

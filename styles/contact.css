@@ -1,0 +1,91 @@
+
+body {
+    background: linear-gradient(#6A3BB4, #9400D4, #540569);
+    background-repeat: none;
+    background-attachment: fixed;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contact-container {
+    font-family: "Nunito", sans-serif;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 28px;
+    margin: 70px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgba(16, 16, 16, 0.511);
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+.contact-container:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+    gap: 20px;
+}
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #F9AD1A;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr {
+    border: none;
+    width: 225px;
+    height: 5px;
+    background-color: #F9AD1A;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs {
+    font-family: "Nunito", sans-serif;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.contact-inputs:focus {
+    border: 2px solid #F9AD1A;
+}
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: #F9AD1A;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#6A3BB4);
+    cursor: pointer;
+}
+.contact-right img {
+    display: flex;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
