@@ -1,0 +1,126 @@
+ *, *::before, *::after {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    border: 2px solid rgb(255, 217, 0);
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: #F9AD1A;
+    background-color: #333333;
+    background-image: linear-gradient(rgba(106,59,180,100%), rgba(148,0,212,27.6%), rgba(84,5,105,75%));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.page-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+ .hero__title,
+ p {
+    margin: 20px;
+ }
+
+ .txt.txt--white {
+    color: #FFFFFF;
+ }
+
+ .header {
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
+ }
+
+ .header__logo {
+    font-size: 44px;
+    font-weight: 800px;
+ }
+
+ .header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    cursor: pointer;
+    margin: 20px;
+ }
+
+ .menu {
+    background-color: #F9AD1A;
+    height: 3px;
+    border-radius: 10px;
+ }
+
+ .menu.menu--line1,
+ .menu.menu--line2 {
+    width: 30px;  
+ }
+
+ .menu.menu--line3 {
+    width: 20px;
+ }
+
+ .main {
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+ }
+
+ .hero__title {
+    border: 2px solid rgb(0, 234, 255);
+    width: 90%;
+    width: 100%;
+    min-height: 162px;
+    font-weight: 800;
+    font-size: 70px;
+    margin: 20px 0 20px 20px;
+ }
+
+ .txt.txt--solar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 750;
+    letter-spacing: 0.01em;
+ }
+ 
+
+ .hero__img {
+    border: 2px solid rgb(0, 234, 255);
+    max-width: 375px;
+    width: 100%;
+    min-height: 345px;
+    margin: 20px
+ }
+
+ .hero__btn {
+    max-width: 345px;
+    width: 100%;
+    height: 50px;
+    background-color: #6A3BB4;
+    border-radius: 50px;
+    border: none;
+    filter: drop-shadow(0 0 0.75rem #FFFFFF);
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+ }
