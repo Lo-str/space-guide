@@ -3,9 +3,8 @@ body {
    line-height: 5.6;
    margin: 0;
    padding: 0;
-   background: url("../images/sp.png");
+   background: linear-gradient(#6A3BB4, #9400D4, #540569);
    background-position: center;
-  
    z-index: -10;
    color:#fff;
    
