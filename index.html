@@ -7,12 +7,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <!-- Normalize and stylesheet links -->
     <link rel="stylesheet" href="normalize-code.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- CSS animations -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-  
+
 <!-- Body -->
 <body>
     <div class="page-wrapper">
@@ -25,64 +29,42 @@
             <!-- Side Menu -->
             <nav class="header__nav">
                 <div class="menu">
-                  <!-- 1) Checkbox -->
+                  <!-- Checkbox -->
                   <input type="checkbox" id="menu-toggle" class="menu__toggle" />
-              
-                  <!-- 2) Label toggles the checkbox -->
-                  <label for="menu-toggle" class="menu__burger" aria-label="Open menu">
+                  <!-- Label toggles the checkbox -->
+                  <label for="menu-toggle" class="menu__burger " aria-label="Open menu">
                     <span class="menu__line"></span>
                     <span class="menu__line"></span>
                     <span class="menu__line"></span>
                   </label>
-              
-                  <!-- 3) Menu links -->
-                  <div class="menu__links" id="menu-links" role="menu">
-                    <a href="#" class="link" role="menuitem">Home</a>
-                    <a href="#" class="link" role="menuitem">Planets</a>
-                    <a href="#" class="link" role="menuitem">Missions</a>
+                  <!-- Menu links -->
+                  <div class="menu__links animate__animated animate__zoomIn" id="menu-links" role="menu">
+                    <a href="#index" class="link" role="menuitem">Base</a>
+                    <a href="#gallery" class="link" role="menuitem">Cosmos</a>
+                    <a href="#about" class="link" role="menuitem">Mission</a>
+                    <a href="#contact" class="link" role="menuitem">Frequency</a>
                   </div>
                 </div>
               </nav>
-              
+
         </header>
 
-        <!-- Main -->
-        <main class="main">
+        <!-- Grid main -->
+        <main class="main main--bg">
 
-            <!-- Hero -->
-            <section class="hero">
+          <!-- Title -->
+          <h1 class="main__title">
+            <span class="txt txt--white">Let's Explore the<br></span>
+            <span class="txt txt--solar"> Solar System <br></span>
+            <span class="txt txt--white">with</span> Explorer
+          </h1>
 
-                <!-- Title -->
-                <h1 class="hero__title"><span class="txt txt--white">Let's Explore the<br></span><span class="txt txt--solar"> Solar System <br></span><span class="txt txt--white">with</span> Explorer</h1>
-
-                <!-- Main image -->
-                <svg class="hero__img" width="375" height="345">
-                  <use xlink:href="images/index/astronomer.svg#astronomer"></use>
-                </svg>
-                
-                <!-- Button -->
-                <button class="hero__btn" onclick="#"><span class="txt txt--white">Let's Go</span></button>
-            </section>
+          <!-- Button -->
+          <button class="main__btn" onclick="#">
+            <span class="txt txt--white">Let's Go</span>
+          </button>
         </main>
     </div>
-    <script>
-        (function injectSprite(url) {
-          fetch(url)
-            .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
-            .then(svgText => {
-              const holder = document.createElement('div');
-              holder.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden;';
-              holder.innerHTML = svgText; // contains <symbol id="astronomer">...</symbol>
-              document.body.prepend(holder);
-      
-              // After injection, switch the reference to local #astronomer
-              document.querySelectorAll('svg.hero__img use').forEach(u => {
-                u.setAttribute('href', '#astronomer');
-                u.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#astronomer');
-              });
-            })
-            .catch(err => console.error('Sprite load failed:', err));
-        })('images/index/astronomer.svg');
-    </script>
+
 </body>
 </html>
