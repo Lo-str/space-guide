@@ -4,10 +4,12 @@ body {
    margin: 0;
    padding: 0;
    background: linear-gradient(#6A3BB4, #9400D4, #540569);
+   background-repeat: none;
+   background-attachment: fixed;
    background-position: center;
    z-index: -10;
    color:#fff;
-   
+
 }
 
 header {
