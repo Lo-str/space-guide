@@ -3,37 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>space-guide </title>
+    <title>Mission</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/about.css">
-    </head>
-    <body>
-        <header>
-            <h1>About us</h1>
-        </header>
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+<!-- Header -->
+<header class="header">
 
-        <div class="team-section">
-            <img src="../images/jk.png" alt="Man with telescope" style="width:250px; height:auto; border-radius: 8px; float: right; margin-left: 10px;">
+    <!-- Logo -->
+    <div class="header__logo">
+        <p>Explorer</p>
+    </div>
 
-            <h2>Welcome to our Space-Guide!</h2>
-             <p style="white-space: normal; line-height: 1.4; margin: 0;">
-            We are a team of three students working together to explore and present the fascinating world of space.
-            Our goal is to create a resource that is both engaging and educational,
-            helping others learn about the universe in a clear and approachable way. 
-            Through this project, we hope to share our curiosity.
-            </p>
+    <!-- Side Menu -->
+    <nav class="header__nav">
+        <div class="menu">
+            <!-- Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu__toggle" />
+            <!-- Label toggles the checkbox -->
+            <label for="menu-toggle" class="menu__burger " aria-label="Open menu">
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+            </label>
+            <!-- Menu links -->
+            <div class="menu__links animate__animated animate__zoomIn" id="menu-links" role="menu">
+                <a href="index.html" class="link" role="menuitem">Base</a>
+                <a href="pages/gallery.html" class="link" role="menuitem">Cosmos</a>
+                <a href="pages/about.html" class="link" role="menuitem">Mission</a>
+                <a href="pages/contact.html" class="link" role="menuitem">Frequency</a>
+            </div>
         </div>
-        <div class="image-row">
-            <img src="../images/LS1.png" alt="pic of group member">
-            <img src="../images/MR2.png" alt="pic of group member">
-            <img src="../images/TH3.png" alt="pic of group member">
-            
+    </nav>
 
-        </div>
+</header>
+
+<body>
+
+    <div class="team-section">
+        <img src="../images/jk.png" alt="Man with telescope" style="width:250px; height:auto; border-radius: 8px; float: right; margin-left: 10px;">
+
+        <h2>Welcome to our Space-Guide!</h2>
+            <p style="white-space: normal; line-height: 1.4; margin: 0;">
+        We are a team of three students working together to explore and present the fascinating world of space.
+        Our goal is to create a resource that is both engaging and educational,
+        helping others learn about the universe in a clear and approachable way.
+        Through this project, we hope to share our curiosity.
+        </p>
+    </div>
+    <div class="image-row">
+        <img src="../images/LS1.png" alt="pic of group member">
+        <img src="../images/MR2.png" alt="pic of group member">
+        <img src="../images/TH3.png" alt="pic of group member">
 
 
-        <footer>
-            Space-Guide.
-        </footer>
-    </body>
-    </html>
+    </div>
+
+
+    <footer>
+        Space-Guide.
+    </footer>
+</body>
+</html>

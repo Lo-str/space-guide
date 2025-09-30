@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Frequency</title>
 
     <!-- Normalize and stylesheet links -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
 
 </head>
+<!-- Header -->
+<header class="header">
+
+    <!-- Logo -->
+    <div class="header__logo">
+        <p>Explorer</p>
+    </div>
+
+    <!-- Side Menu -->
+    <nav class="header__nav">
+        <div class="menu">
+            <!-- Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu__toggle" />
+            <!-- Label toggles the checkbox -->
+            <label for="menu-toggle" class="menu__burger " aria-label="Open menu">
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+            </label>
+            <!-- Menu links -->
+            <div class="menu__links animate__animated animate__zoomIn" id="menu-links" role="menu">
+                <a href="index.html" class="link" role="menuitem">Base</a>
+                <a href="pages/gallery.html" class="link" role="menuitem">Cosmos</a>
+                <a href="pages/about.html" class="link" role="menuitem">Mission</a>
+                <a href="pages/contact.html" class="link" role="menuitem">Frequency</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
 
 <!-- Body -->
 <body>
