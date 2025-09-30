@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contact Form</title>
 
     <!-- Normalize and stylesheet links -->
     <link rel="stylesheet" href="normalize code.css">
     <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+
 </head>
 
 <!-- Body -->
-<body></body>
+<body>
+    <div class="container">
+        <div class="contact-container">
+            <form action="" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in Touch</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <img src="../images/astronomer.png" alt="astronomer">
+        </div>
+    </div>
+</body>
 </html>
