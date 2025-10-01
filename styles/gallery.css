@@ -5,11 +5,11 @@ body {
     font-family: "Nunito", sans-serif;
     margin: 0px 150px 100px 150px
 }
-.explorer {
+/* .explorer {
     color: #F9AD1A;
     display: flex;
     justify-content: center;
-}
+} */
 h3 {
     display: flex;
     justify-content: center;

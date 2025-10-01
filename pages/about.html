@@ -10,46 +10,41 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&
-        family=Nunito:ital,wght@0,200..1000;1,200..1000&
-        family=Open+Sans:ital,wght@0,300..800;1,300..800&
-        family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap">
     <!-- CSS animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<!-- Header -->
-<header class="header">
-
-    <!-- Logo -->
-    <div class="header__logo">
-        <p>Explorer</p>
-    </div>
-
-    <!-- Side Menu -->
-    <nav class="header__nav">
-        <div class="menu">
-            <!-- Checkbox -->
-            <input type="checkbox" id="menu-toggle" class="menu__toggle" />
-            <!-- Label toggles the checkbox -->
-            <label for="menu-toggle" class="menu__burger " aria-label="Open menu">
-                <span class="menu__line"></span>
-                <span class="menu__line"></span>
-                <span class="menu__line"></span>
-            </label>
-            <!-- Menu links -->
-            <div class="menu__links animate__animated animate__zoomIn" id="menu-links" role="menu">
-                <a href="../index.html" class="link" role="menuitem">Base</a>
-                <a href="../pages/gallery.html" class="link" role="menuitem">Cosmos</a>
-                <a href="../pages/about.html" class="link" role="menuitem">Mission</a>
-                <a href="../pages/contact.html" class="link" role="menuitem">Frequency</a>
-            </div>
-        </div>
-    </nav>
-
-</header>
 
 <body>
+    <!-- Header -->
+    <header class="header">
 
+        <!-- Logo -->
+        <div class="header__logo"><p>Explorer</p></div>
+
+        <!-- Side Menu -->
+        <nav class="header__nav">
+            <div class="menu">
+                <!-- Checkbox -->
+                <input type="checkbox" id="menu-toggle" class="menu__toggle" />
+                <!-- Label toggles the checkbox -->
+                <label for="menu-toggle" class="menu__burger " aria-label="Open menu">
+                    <span class="menu__line"></span>
+                    <span class="menu__line"></span>
+                    <span class="menu__line"></span>
+                </label>
+                <!-- Menu links -->
+                <div class="menu__links animate__animated animate__zoomIn" id="menu-links" role="menu">
+                    <a href="../index.html" class="link" role="menuitem">Home Base</a>
+                    <a href="./gallery.html" class="link" role="menuitem">Galaxy Explorer</a>
+                    <a href="./about.html" class="link" role="menuitem">Our Team</a>
+                    <a href="./contact.html" class="link" role="menuitem">Contact Frequency</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
     <div class="team-section">
         <img src="../images/about/jk.png" alt="Man with telescope" style="width:250px; height:auto; border-radius: 8px; float: right; margin-left: 10px;">
 
